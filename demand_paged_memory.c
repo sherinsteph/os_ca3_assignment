@@ -26,16 +26,16 @@ void main(){
 	printf("1.Find PageFault Rate\n");
 	printf("2.Exit");
 	scanf("%d",&va1);
-  if(va1==1){
-  process();
-  }
-  else if(va1==2){
-  exit(0);
-  }
+  	if(va1==1){
+  		process();
+  	}
+  	else if(va1==2){
+  		exit(0);
+  	}
   
 	printf("\n\n");
 
-}while(swtch<3);
+	}while(val<3);
 }
 void process(){
 	
@@ -59,7 +59,7 @@ void process(){
 	printf("Service Page Fault [Modified Page][in nanoseconds] %lf \n",spfmn);
 	printf("Memory Access Time[in nanoseconds]%lf\n",mat);
 	printf("Effective Access Time %lf\n",eat);
-    pfr =  page_fault_rate(spfen,spfmn,mat,tpmp,eat);
+    	pfr =  page_fault_rate(spfen,spfmn,mat,tpmp,eat);
 	printf("\nMaximum Acceptable Page Fault rate = %.2e[exponential notation]",pfr);
 
 
