@@ -2,7 +2,7 @@
 #include <stdio.h> 
 int goal = 0; 
 long fib[500];
-c="Sherin";
+
 void *runner(void *param) 
 { 
   if (goal <= 0) 
