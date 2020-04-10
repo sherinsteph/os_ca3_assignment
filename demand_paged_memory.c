@@ -53,7 +53,7 @@ void process(){
 
 	spfen = (spfe*1000000);
 	spfmn = (spfm*1000000);
-	tpmp = (times_page_modified/100);   
+	tpmp = (tpm/100);   
 	printf("\nPage Fault rate calculated For:\n");
 	printf("Service Page Fault[Empty|Page Not Modified]=%lf \n",spfen);
 	printf("Service Page Fault [Modified Page][in nanoseconds] %lf \n",spfmn);
